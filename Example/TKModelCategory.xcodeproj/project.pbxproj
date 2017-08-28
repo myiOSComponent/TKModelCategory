@@ -24,6 +24,7 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		A72133D01F541D6800AB01BB /* TKTestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A72133CF1F541D6800AB01BB /* TKTestObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		06365AEF863BE14061E3BC46 /* TKModelCategory.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = TKModelCategory.podspec; path = ../TKModelCategory.podspec; sourceTree = "<group>"; };
+		06365AEF863BE14061E3BC46 /* TKModelCategory.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TKModelCategory.podspec; path = ../TKModelCategory.podspec; sourceTree = "<group>"; };
 		0F090D2475878FA21A133559 /* Pods-TKModelCategory_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TKModelCategory_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TKModelCategory_Tests/Pods-TKModelCategory_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		3CC5623559141FEBDC6ED786 /* Pods-TKModelCategory_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TKModelCategory_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TKModelCategory_Tests/Pods-TKModelCategory_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		4B2907965DA8952DC67CDB00 /* Pods_TKModelCategory_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TKModelCategory_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,9 +63,11 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		835CF9A1C78EAE0ECD49B316 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		835CF9A1C78EAE0ECD49B316 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		ABFD44F2548A8CF2750CE9DA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		A72133CE1F541D6800AB01BB /* TKTestObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKTestObject.h; sourceTree = "<group>"; };
+		A72133CF1F541D6800AB01BB /* TKTestObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKTestObject.m; sourceTree = "<group>"; };
+		ABFD44F2548A8CF2750CE9DA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		AF9EC9CDECF19ADD3694C507 /* Pods_TKModelCategory_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TKModelCategory_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED61AA8EE50D4E074271BA34 /* Pods-TKModelCategory_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TKModelCategory_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-TKModelCategory_Example/Pods-TKModelCategory_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -172,6 +175,8 @@
 			children = (
 				6003F5BB195388D20070C39A /* Tests.m */,
 				6003F5B6195388D20070C39A /* Supporting Files */,
+				A72133CE1F541D6800AB01BB /* TKTestObject.h */,
+				A72133CF1F541D6800AB01BB /* TKTestObject.m */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -304,10 +309,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TKModelCategory_Example/Pods-TKModelCategory_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/TKMiddleware/TKMiddleware.framework",
 				"${BUILT_PRODUCTS_DIR}/TKModelCategory/TKModelCategory.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TKMiddleware.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TKModelCategory.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,11 +364,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-TKModelCategory_Tests/Pods-TKModelCategory_Tests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/FBSnapshotTestCase/FBSnapshotTestCase.framework",
 				"${BUILT_PRODUCTS_DIR}/Kiwi/Kiwi.framework",
+				"${BUILT_PRODUCTS_DIR}/TKModelMapping/TKModelMapping.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kiwi.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TKModelMapping.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -419,6 +428,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F5BC195388D20070C39A /* Tests.m in Sources */,
+				A72133D01F541D6800AB01BB /* TKTestObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

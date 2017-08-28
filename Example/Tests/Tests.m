@@ -7,38 +7,28 @@
 //
 
 // https://github.com/kiwi-bdd/Kiwi
+#import <Kiwi/Kiwi.h>
+#import <TKModelCategory/TKModel.h>
+#import "TKTestObject.h"
 
 SPEC_BEGIN(InitialTests)
 
-describe(@"My initial tests", ^{
+describe(@"MyJson convert", ^{
 
   context(@"will fail", ^{
-
-      it(@"can do maths", ^{
-          [[@1 should] equal:@2];
-      });
-
-      it(@"can read", ^{
-          [[@"number" should] equal:@"string"];
-      });
-    
-      it(@"will wait and fail", ^{
-          NSObject *object = [[NSObject alloc] init];
-          [[expectFutureValue(object) shouldEventually] receive:@selector(autoContentAccessingProxy)];
-      });
+      TKTestObject* obj = [TKTestObject new];
+      obj.test1 = 10;
+      obj.test2 = @"hha";
+      
+      NSString* jsonString = [obj tkModelToJsonString];
+      NSLog(@"转化后的结果为%@",obj.test2);
+      
+      TKTestObject* obj1 = [TKTestObject tkModelWithJson:jsonString];
+      [[obj1 shouldNot] beNil];
+      if([obj tkModelIsEqual:obj1]){
+          NSLog(@"相等的");
+      }
   });
-
-  context(@"will pass", ^{
-    
-      it(@"can do maths", ^{
-        [[@1 should] beLessThan:@23];
-      });
-    
-      it(@"can read", ^{
-          [[@"team" shouldNot] containString:@"I"];
-      });  
-  });
-  
 });
 
 SPEC_END
