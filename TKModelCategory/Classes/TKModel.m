@@ -55,11 +55,11 @@ static NSString* const kClassPropertyInfo = @"propertyInfo";
 - (BOOL)tkModelSetWithJson:(id)json
 {
     NSParameterAssert(json);
-    return [TKMiddleWareMgr performTarget:kModelObjTarget
+    return [[TKMiddleWareMgr performTarget:kModelObjTarget
                                    action:@"modelSetWithJSON"
                                    params:@{kModelORMObject : self,
                                             kModelJsonContent : json}
-                        shouldCacheTarget:YES];
+                        shouldCacheTarget:YES] boolValue];
 }
 
 - (id)tkModelToJson
