@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TKModelCategory'
-  s.version          = '0.0.1'
+  s.version          = '0.0.11'
   s.summary          = '模型转化对外接口'
 
 # This description is used to generate tags and improve search results.
