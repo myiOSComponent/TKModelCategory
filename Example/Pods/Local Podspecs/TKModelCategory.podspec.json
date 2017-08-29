@@ -1,6 +1,6 @@
 {
   "name": "TKModelCategory",
-  "version": "0.0.1",
+  "version": "0.0.11",
   "summary": "模型转化对外接口",
   "description": "模型转化对外的接口，包含基本的转换",
   "homepage": "https://github.com/thinkWind",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/myiOSComponent/TKModelCategory.git",
-    "tag": "0.0.1"
+    "tag": "0.0.11"
   },
   "platforms": {
     "ios": "8.0"
