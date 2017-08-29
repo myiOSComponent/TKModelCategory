@@ -126,9 +126,8 @@ static NSString* const kClassPropertyInfo = @"propertyInfo";
     return [ret boolValue];
 }
 
-+ (NSDictionary *)tkClassInfo:(Class)modelClass
++ (NSDictionary *)tkClassInfo
 {
-    NSParameterAssert(modelClass);
     return [TKMiddleWareMgr performTarget:kModelObjTarget
                                    action:@"classInfo"
                                    params:@{kModelORMClass : self}

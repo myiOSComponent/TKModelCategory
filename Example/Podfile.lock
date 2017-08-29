@@ -6,7 +6,7 @@ PODS:
     - FBSnapshotTestCase/Core
   - Kiwi (2.4.0)
   - TKMiddleware (0.0.1)
-  - TKModelCategory (0.0.11):
+  - TKModelCategory (0.0.12):
     - TKMiddleware (~> 0.0.1)
   - TKModelMapping (0.0.11):
     - TKModelMapping/Model (= 0.0.11)
@@ -29,7 +29,7 @@ SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   Kiwi: f49c9d54b28917df5928fe44968a39ed198cb8a8
   TKMiddleware: e4152543d955825c3a8a6f68eaefbfebca2292c7
-  TKModelCategory: f8dc74ee474ae2ab2d8a03c160fdc5c571a863c3
+  TKModelCategory: 1c7a89cb5b67c2828c184f5970deb768a82b1394
   TKModelMapping: ecda14dd1ca0834b6f4554ab180cc66f8897dee9
 
 PODFILE CHECKSUM: af1623f64a876ffe4d04d29116118a61246568ba

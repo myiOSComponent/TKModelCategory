@@ -41,6 +41,6 @@
 
 - (BOOL)tkModelIsEqual:(id)model;
 
-+ (NSDictionary *)tkClassInfo:(Class)modelClass;
++ (NSDictionary *)tkClassInfo;
 
 @end
